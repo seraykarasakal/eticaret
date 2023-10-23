@@ -12,7 +12,7 @@ class PageController extends Controller
 
     }
     public function productDetail(){
-        return view('frontend.pages.product-detail');
+        return view('frontend.pages.product-detail'); 
     }
     public function about(){
         return view('frontend.pages.about');

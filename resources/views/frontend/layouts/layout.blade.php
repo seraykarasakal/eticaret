@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+  
 
     <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">
     <link rel="stylesheet" href="{{ asset("css/magnific-popup.css") }}">
@@ -18,7 +19,7 @@
     <link rel="stylesheet" href="{{ asset("css/aos.css") }}">
 
     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
-    
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
   <body>
   
