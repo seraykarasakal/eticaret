@@ -1,5 +1,5 @@
 <footer class="site-footer border-top">
-  <div class="container">
+  <x-layouts.container>
       <div class="mx-auto flex flex-wrap space-around">
         <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-4">
           <div class="flex flex-col">
@@ -49,5 +49,5 @@
           </p>
         </div>
       </div>
-  </div>
+  </x-layouts.container>
 </footer>

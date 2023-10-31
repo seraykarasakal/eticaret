@@ -27,7 +27,7 @@
   </head>
   <body>
   
-  <div class="site-wrap">
+  <div class=" absolute h-full w-full z-[2] overflow-hidden  before:opacity-[1] before:visible before:duration-[0.2s] before:ease-in-out before:delay-0	before:transition-all before:bg-bg-3  before:content-[''] before:absolute before:z-[2] before:inset-0	">
     @include('frontend.inc.header')
 
     @yield('content')
@@ -35,7 +35,7 @@
     @include('frontend.inc.footer')
 
   </div>
-
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   <script src="{{ asset("js/jquery-3.3.1.min.js") }}"></script>
   <script src="{{ asset("js/jquery-ui.js") }}"></script>
   <script src="{{ asset("js/popper.min.js") }}"></script>
