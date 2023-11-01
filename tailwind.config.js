@@ -25,9 +25,15 @@ export default {
           '0%': { transform: 'translate3d(0,40px,0)', opacity: 0 },
           '100%': { transform: 'translate3d(0,0,0)', opacity: 1 },
         },
+        fadeLeft: {
+          '0%': { transform: 'translate3d(0,40px,0)', opacity: 0 },
+          '100%': { transform: 'translate3d(0,0,0)', opacity: 1 },
+        },
       },
       animation: {
         'fadeIn': 'fadeIn 1s ease-in-out', // '2s' animasyon süresini temsil eder
+        'fadeLeft': 'fadeLeft 1s ease-in-out', // '2s' animasyon süresini temsil eder
+
       },
       backgroundImage:{
         'bg-1': 'linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%)',
@@ -46,6 +52,7 @@ export default {
     },
   },
   plugins: [
+
   ],
 }
 
