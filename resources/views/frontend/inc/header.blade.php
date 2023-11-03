@@ -1,21 +1,21 @@
 <header class="bg-white">
   <div class="site-navbar-top">
     <x-layouts.container>
-      <div class="flex justify-around items-center">
-        <div class="col-6 col-md-4  order-md-1 site-search-icon text-left">
+      <div class="flex items-center  my-[20px]">
+        <div class=" w-1/3 flex justify-start">
           <form action="" class="site-block-top-search">
             <span class="icon icon-search2"></span>
             <input type="text" class="form-control border-0" placeholder="Search">
           </form>
         </div>
-        <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+        <div class="w-1/3 flex justify-center ">
           <div class="site-logo">
             <a class=" hover:text-gray-600" href="{{route('index')}}" class="js-logo-clone">Shoppers</a>
           </div>
         </div>
-        <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+        <div class="w-1/3 flex justify-end">
           
-            <ul  class="flex ">
+            <ul  class="flex gap-[6px]">
               <li>
                 <a class=" hover:text-gray-600" href="#"><span class="icon icon-person"></span></a>
               </li>
@@ -34,9 +34,10 @@
       </div>
     </x-layouts.container>
   </div> 
-  <div class="flex justify-between items-center " >
+  <hr>
+  <div class="flex justify-between items-center my-[20px]" >
     <x-layouts.container>
-      <ul class=" md:flex flex-row gap-[40px] hidden">
+      <ul class=" md:flex flex-row gap-[40px] hidden  ">
         <li><a d class=" hover:text-gray-600" href="{{route('index')}}">Anasayfa</a></li>
         <li><a class=" hover:text-gray-600" href="{{ route('about') }}">Hakkımızda</a></li>
         <li><a class=" hover:text-gray-600" href="{{ route('products')}}">Shop</a></li>

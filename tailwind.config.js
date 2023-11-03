@@ -54,6 +54,7 @@ export default {
       fontFamily: {
         poppins: ['Mukta', 'sans-serif'],
       },
+      
     },
   },
   plugins: [
