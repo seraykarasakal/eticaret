@@ -1,5 +1,5 @@
 
-<div id="mobile-menu" class="w-full h-full hidden fixed top-0 left-0 bg-bg-3 opacity-100 z-10  animate-fadeLeft ">
+<div id="mobile-menu" class="w-full h-full hidden fixed top-0 left-0 bg-bg-3 opacity-100 z-10 animation-fadeRight ">
 
   <div class="w-[300px] fixed right-0 z-[3] pt-[20px] bg-white h-full duration-[0.2s] ease-in-out delay-0	transition-all transform translate-x-0 max-w-3xl:hidden top-0  ">
     <div class="w-full float-left my-[20px] px-[20px]">

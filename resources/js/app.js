@@ -7,11 +7,15 @@ function noscroll() {
     window.scrollTo(0, 0);
 }
 closeBtn.addEventListener("click", ()=>{
+    mobileMenu.classList.remove('animate-fadeLeft'); // Önce sol animasyonu kaldırın
+    mobileMenu.classList.add('animation-fadeRight');
     mobileMenu.style.display = "none";
-    window.removeEventListener("scroll", noscroll);
+
+    window.removeEventListener("scroll", noscroll);    
 });
 
 hamburger.addEventListener("click", ()=>{
     mobileMenu.style.display = "block";
     window.addEventListener("scroll", noscroll);
 })
+
