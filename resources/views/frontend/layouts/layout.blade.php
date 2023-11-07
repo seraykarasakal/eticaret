@@ -28,7 +28,7 @@
 
   <body>
   
-    <div class=" absolute h-full w-full before:opacity-[0] before:hidden before:duration-[0.2s] before:ease-in-out before:delay-0	before:transition-all before:bg-bg-3  before:content-[''] before:absolute before:z-[2] before:inset-0 group-[.on-mobile-menu]:before:visible group-[.on-mobile-menu]:before:opacity-[1]	">
+    <div class=" absolute h-full w-full before:opacity-[0] before:hidden before:duration-[0.2s] before:ease-in-out before:delay-0	before:transition-all before:bg-bg-3  before:content-[''] before:absolute before:z-[2] before:inset-0 ">
       @include('frontend.inc.header')
       <x-layouts.mobile-menu/>
       @yield('content')

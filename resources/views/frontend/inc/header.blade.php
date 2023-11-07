@@ -1,31 +1,29 @@
 <header class="bg-white">
-  <div class="site-navbar-top">
+  <div class="">
     <x-layouts.container>
-      <div class="flex items-center  my-[20px]">
-        <div class=" w-1/3 flex justify-start">
-          <form action="" class="site-block-top-search">
-            <span class="icon icon-search2"></span>
-            <input type="text" class="form-control border-0" placeholder="Search">
-          </form>
-        </div>
-        <div class="w-1/3 flex justify-center ">
+      <div class="flex justify-between items-center my-[20px] text-grey text-[20px] ">
+        <form class=" flex-1 flex justify-start  items-center gap-[2px]">
+          <div class="las la-search"></div>
+          <input type="text" class="form-control border-0" placeholder="Search">
+        </form>
+        <div class=" flex-1 flex justify-center">
           <div class="site-logo">
-            <a class=" hover:text-gray-600" href="{{route('index')}}" class="js-logo-clone">Shoppers</a>
+          <a class="inline-block uppercase px-[10px] tracking-[.2em] border-solid	border-[2px] border-grey " href="{{ route('index') }}">Shoppers</a></li>
           </div>
         </div>
-        <div class="w-1/3 flex justify-end">
+        <div class=" flex-1 flex justify-end">
           
             <ul  class="flex gap-[6px]">
               <li>
-                <a class=" hover:text-gray-600" href="#"><span class="icon icon-person"></span></a>
+                <a class=" hover:text-gray-600" href="#"><i class="las la-user"></i></span></a>
               </li>
               <li>
-                <a class=" hover:text-gray-600" href="#"><span class="icon icon-heart-o"></span></a>
+                <a class=" hover:text-gray-600" href="#"><i class="lar la-heart"></i></span></a>
               </li>
               <li>
                 <a class=" hover:text-gray-600" href="{{ route('cart') }}" class="site-cart">
-                  <span class="icon icon-shopping_cart"></span>
-                  <span class="count">2</span>
+                <i class="las la-shopping-cart"></i>
+                  
                 </a>
               </li> 
               <li><a id="hamburger"  class=" md:hidden hover:text-gray-600" href="#"><span class="las la-bars "></span></a></li>
@@ -35,7 +33,7 @@
     </x-layouts.container>
   </div> 
   <hr>
-  <div class="flex justify-between items-center my-[20px]" >
+  <div class="md:flex md:justify-between md:items-center my-[20px] hidden" >
     <x-layouts.container>
       <ul class=" md:flex flex-row gap-[40px] hidden  ">
         <li><a d class=" hover:text-gray-600" href="{{route('index')}}">Anasayfa</a></li>

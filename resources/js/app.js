@@ -1,21 +1,18 @@
-import './bootstrap';
-const closeBtn    = document.getElementById('close');
-const mobileMenu    = document.getElementById('mobile-menu');
-const hamburger    = document.getElementById('hamburger');
+import "./bootstrap";
+const closeBtn = document.getElementById("close");
+const mobileMenu = document.getElementById("mobile-menu");
+const hamburger = document.getElementById("hamburger");
 
 function noscroll() {
     window.scrollTo(0, 0);
 }
-closeBtn.addEventListener("click", ()=>{
-    mobileMenu.classList.remove('animate-fadeLeft'); // Önce sol animasyonu kaldırın
-    mobileMenu.classList.add('animation-fadeRight');
+closeBtn.addEventListener("click", () => {
     mobileMenu.style.display = "none";
 
-    window.removeEventListener("scroll", noscroll);    
+    window.removeEventListener("scroll", noscroll);
 });
 
-hamburger.addEventListener("click", ()=>{
+hamburger.addEventListener("click", () => {
     mobileMenu.style.display = "block";
     window.addEventListener("scroll", noscroll);
-})
-
+});

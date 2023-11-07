@@ -68,9 +68,9 @@
         </a>
       
       </div>
-      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0 " data-aos="fade" data-aos-delay="100">
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0 ">
         <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{ route('child-products') }}">
-          <figure class="image">
+          <figure class="image relative mb-0 overflow-hidden">
             <img src="images/children.jpg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0">
           </figure>
           <div class="text z-[2] w-full bottom-0	pl-[20px] absolute	text-white">
@@ -79,9 +79,9 @@
           </div>
         </a>
       </div>
-      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0" data-aos="fade" data-aos-delay="200">
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0">
         <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{ route('men-products') }}">
-          <figure class="image">
+          <figure class="image relative mb-0 overflow-hidden">
             <img src="images/men.jpg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0">
           </figure>
           <div class="text z-[2] w-full bottom-0	pl-[20px] absolute	text-white">
