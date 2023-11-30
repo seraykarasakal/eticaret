@@ -1,20 +1,19 @@
 @extends('frontend.layouts.layout')
 @section('content')
 
-<div class="site-blocks-cover" style="background-image: url(images/hero_1.jpg);" data-aos="fade">
+<div class="site-blocks-cover bg-[url('/images/home_header.jpg')]"  data-aos="fade">
   <x-layouts.container>
     <div class="row align-items-start align-items-md-center justify-content-end">
         <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
-          <h1 class="mb-2">Finding Your Perfect Shoes</h1>
+          <h1 class="mb-2">{{$slider->name}}</h1>
           <div class="intro-text text-center text-md-left">
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla. </p>
-            <p><a href="#" class="btn btn-sm btn-primary">Shop Now</a></p>
+            <p class="mb-4">{{$slider->content }}</p>
+            <p><a href="{{url('/').'/'.$slider->link}}" class="btn btn-sm btn-primary">Shop Now</a></p>
           </div>
         </div>
     </div>  
   </x-layouts.container>
 </div>
-
 <div class="py-[64px] text-left border-solid box-border border-b-[1px] ">
   <x-layouts.container>
     <div class="flex flex-wrap ">
@@ -57,7 +56,7 @@
   <x-layouts.container>
     <div class="flex gap-4 flex-col sm:flex-row">
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0" >
-        <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{ route('women-products') }} ">
+        <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{route('women-products')}} ">
           <figure class="image relative mb-0 overflow-hidden">
             <img src="images/women.jpg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0 ">
           </figure>
@@ -69,7 +68,7 @@
       
       </div>
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0 ">
-        <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{ route('child-products') }}">
+        <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{route('child-products')}}">
           <figure class="image relative mb-0 overflow-hidden">
             <img src="images/children.jpg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0">
           </figure>
@@ -80,7 +79,7 @@
         </a>
       </div>
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0">
-        <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{ route('men-products') }}">
+        <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{route('men-products')}}">
           <figure class="image relative mb-0 overflow-hidden">
             <img src="images/men.jpg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0">
           </figure>
@@ -131,6 +130,5 @@
       </div>
     </div>
   </x-layouts.container>
-</div>
-
+</div>Z
 @endsection

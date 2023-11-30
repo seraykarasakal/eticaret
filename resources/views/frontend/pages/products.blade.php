@@ -1,12 +1,12 @@
 @extends('frontend.layouts.layout')
 @section('content')
 
-<div class="bg-light py-3">
-    <div class="container">
+<div class="bg-light pt-4">
+    <x-layouts.container>
       <div class="row">
         <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Shop</strong></div>
       </div>
-    </div>
+    </x-layouts.container>
   </div>
 
   <div class="site-section">
@@ -17,7 +17,7 @@
 
           <div class="row">
             <div class="col-md-12 mb-5">
-              <div class="float-md-left mb-4"><h2 class="text-black h5">Shop All</h2></div>
+              <div class="md:float-left mb-6"><h2 class="text-black h5">Shop All</h2></div>
               <div class="d-flex">
                 <div class="dropdown mr-1 ml-md-auto">
                   <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -312,5 +312,4 @@
       
     </div>
   </div>
-
 @endsection
