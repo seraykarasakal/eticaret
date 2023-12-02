@@ -1,19 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\About;
+use App\Models\Product;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function products()
     {
-        return view('frontend.pages.products');
+        $products = Product::where('status', '1')->get();
+        return view('frontend.pages.products',compact('products'));
     }
 
-    public function productDetail()
+    public function productDetail($slug)
     {
-        return view('frontend.pages.product-detail');
+        $product = Product::where('slug', $slug)->first();
+        return view('frontend.pages.product-detail',compact('product'));
     }
 
     public function about()
