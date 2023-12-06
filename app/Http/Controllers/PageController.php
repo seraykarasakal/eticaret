@@ -8,9 +8,24 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function products()
+    public function products(Request $request)
     {
-        $products = Product::where('status', '1')->get();
+        $sizes = !empty($request->size) ? explode(',',$request->size) : null;
+
+        $colors = !empty($request->color) ? explode(',',$request->color) : null;
+
+        $products = Product::where('status','1')
+        ->where(function($q) use($sizes,$colors) {
+           if(!empty($sizes)) {
+                $q->whereIn('size', $sizes);
+            }
+            if(!empty($colors)) {
+                $q->whereIn('color', $colors);
+            }
+
+            return $q;
+        })
+        ->paginate(1);
         return view('frontend.pages.products',compact('products'));
     }
 

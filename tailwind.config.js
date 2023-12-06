@@ -15,7 +15,9 @@ export default {
                 "grey-1": "#8c92a0",
                 "grey-2": "#212529",
                 "grey-3": "#868995",
+                "grey-4": "#706f6f",
                 "black-1": "#25262a",
+
                 violet: "rgb(109 40 217)",
             },
             keyframes: {

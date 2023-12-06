@@ -43,12 +43,10 @@
                         <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
                       </div>
                     </div>
-
                   </td>
                   <td>$49.00</td>
                   <td><a href="#" class="btn btn-primary btn-sm">X</a></td>
                 </tr>
-
                 <tr>
                   <td class="product-thumbnail">
                     <img src="images/cloth_2.jpg" alt="Image" class="img-fluid">
@@ -67,7 +65,6 @@
                         <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
                       </div>
                     </div>
-
                   </td>
                   <td>$49.00</td>
                   <td><a href="#" class="btn btn-primary btn-sm">X</a></td>
@@ -125,7 +122,6 @@
                   <strong class="text-black">$230.00</strong>
                 </div>
               </div>
-
               <div class="row">
                 <div class="col-md-12">
                   <button class="btn btn-primary btn-lg py-3 btn-block" onclick="window.location='checkout.html'">Proceed To Checkout</button>

@@ -27,7 +27,7 @@ Route::get('/products/men', [PageController::class, 'products'])->name('men-prod
 Route::get('/products/discount', [PageController::class, 'products'])->name('discount-products');
 
 
-Route::get('/product/detail', [PageController::class, 'productDetail'])->name('product-detail');
+Route::get('/product/detail/{slug}', [PageController::class, 'productDetail'])->name('product-detail');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::post('/contact', [AjaxController::class, 'contactsave'])->name('contact_save');

@@ -1,10 +1,8 @@
 @extends('frontend.layouts.layout')
 @section('content')
-
-  <div class="site-wrap">
-    <div class="site-section">
-    <x-layouts.container>
-        <div class="row">
+<div class=" py-10"> 
+<x-layouts.container>
+        <div>
           <div class="w-full px-[15px]">
             <h2 class="font-medium leading-[1.2rem] mb-4 text-[26px] text-black">İletişim</h2>
           </div>
@@ -87,8 +85,7 @@
           </div>
         </div>
     </x-layouts.container>
-    </div>
-  </div>
 
+</div>
 
 @endsection

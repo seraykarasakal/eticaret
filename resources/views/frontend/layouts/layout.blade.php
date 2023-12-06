@@ -13,7 +13,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 
-   {{--  <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}"> --}} 
+    <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">  
     <link rel="stylesheet" href="{{ asset("css/magnific-popup.css") }}">
     <link rel="stylesheet" href="{{ asset("css/jquery-ui.css" )}}">
     <link rel="stylesheet" href="{{ asset("css/owl.carousel.min.css") }}">
