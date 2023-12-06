@@ -68,18 +68,18 @@
                 </form>
             </div>
             <div class="w-[30%] flex flex-col justify-around items-stretch max-md:flex max-md:flex-wrap max-md:w-full max-md:px-[15px] ">
-              <div class="p-4 border mb-3">
-                <span class="d-block text-primary h6 text-uppercase">New York</span>
-                <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <div class="p-4 border mb-3 h-[140px] flex flex-col justify-center ">
+                <span class="d-block text-primary h6 text-uppercase"> Kadıköy İstanbul</span>
+                <p class="mb-0"> 34716 İstiklal Caddesi, No: 456</p>
               </div>
 
-              <div class="p-4 border mb-3">
-                <span class="d-block text-primary h6 text-uppercase">New York</span>
-                <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <div class="p-4 border mb-3  h-[140px] flex flex-col justify-center">
+                <span class="d-block text-primary h6 text-uppercase">Beşiktaş İstanbul</span>
+                <p class="mb-0">06550  Cumhuriyet Mahallesi, No: 789</p>
               </div>
-              <div class="p-4 border mb-3">
-                <span class="d-block text-primary h6 text-uppercase">New York</span>
-                <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <div class="p-4 border mb-3  h-[140px] flex flex-col justify-center">
+                <span class="d-block text-primary h6 text-uppercase">Çankaya Ankara</span>
+                <p class="mb-0">34716 Atatürk Caddesi, No: 123</p>
               </div>
             </div>
           </div>
