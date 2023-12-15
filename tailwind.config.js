@@ -51,7 +51,8 @@ export default {
                 "line-1": "1.2",
             },
             fontFamily: {
-                poppins: ["Mukta", "sans-serif"],
+                poppins: ["Poppins", "sans-serif"],
+                ebgaramond: ["EB Garamond"],
             },
             screens: {
                 "max-sm": { max: "479px" },

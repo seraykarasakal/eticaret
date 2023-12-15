@@ -9,6 +9,27 @@
     </x-layouts.container>
   </div>
 
+<!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+
+
+  
+-->
+
+
+
+
   <div class="site-section">
     <div class="container">
 

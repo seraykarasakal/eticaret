@@ -1,22 +1,23 @@
 @extends('frontend.layouts.layout')
 @section('content')
 
-<div class="site-blocks-cover bg-[url('/images/home_header.jpg')]"  data-aos="fade">
-  <x-layouts.container>
-    <!-- <div class="row align-items-start align-items-md-center justify-content-end">
-        <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
-          <h1 class="mb-2">{{$slider->name}}</h1>
-          <div class="intro-text text-center text-md-left">
-            <p class="mb-4">{{$slider->content }}</p>
-            <p><a href="{{url('/').'/'.$slider->link}}" class="btn btn-sm btn-primary">Shop Now</a></p>
-          </div>
-        </div>
-    </div>   -->
-  </x-layouts.container>
+<div class=" h-2/3 w-full max-md:h-2/5">
+  <div class=" h-full flex w-full bg-[#c8d0c1] font-poppins my-[20px] ">
+    <div class = "relative flex text-center w-1/3 ">
+      <img class="" src="{{ asset('images/women.jpg')}}" alt="">
+    </div>
+    <div class = "flex flex-col text-center justify-center items-center p-[20px] w-1/3 gap-6">
+      <h2 class="font-medium leading-[1.5rem] md:text-[26px] text-white  uppercase font-ebgaramond ">Modayı Keşfedin</h2>
+      <p class="font-medium md:leading-[1.6rem] md:text-[20px] text-white font-poppins max-md:leading-[1.5rem]">Yeni sezonun en trend giyim ürünleri burada! Stilinizi keşfedin ve tarzınızı yaratın. Sadece bir tık uzaklığınızda unutulmaz bir alışveriş deneyimi sizi bekliyor</p>
+    </div>
+    <div class = " relative flex justify-end w-1/3" >
+      <img class="" src="{{ asset('images/children.jpg') }}" alt="">
+    </div>
+  </div> 
 </div>
 <div class="py-[64px] text-left border-solid box-border border-b-[1px] ">
   <x-layouts.container>
-    <div class="flex flex-wrap ">
+    <div class="flex flex-wrap">
 
       <div class="flex w-full md:w-1/3 px-[15px] my-[15px] animate-fadeIn "  >
         <div class="mr-4 self-start">
@@ -52,7 +53,7 @@
   </x-layouts.container>
 </div>
 
-<div class="site-section site-blocks-2">
+<div class="p-[2.5em] md:p-[5em] site-blocks-2">
   <x-layouts.container>
     <div class="flex gap-4 flex-col sm:flex-row">
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0" >

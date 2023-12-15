@@ -13,7 +13,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 
-    <!-- <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">   -->
+    <!-- <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">  -->
     <link rel="stylesheet" href="{{ asset("css/magnific-popup.css") }}">
     <link rel="stylesheet" href="{{ asset("css/jquery-ui.css" )}}">
     <link rel="stylesheet" href="{{ asset("css/owl.carousel.min.css") }}">
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
   </head>
 
-  <body>
+  <body class=" font-ebgaramond">
   
     <div class=" absolute h-full w-full before:opacity-[0] before:hidden before:duration-[0.2s] before:ease-in-out before:delay-0	before:transition-all before:bg-bg-3  before:content-[''] before:absolute before:z-[2] before:inset-0 ">
       @include('frontend.inc.header')

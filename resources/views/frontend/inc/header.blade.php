@@ -33,14 +33,14 @@
     </x-layouts.container>
   </div> 
   <hr>
-  <div class="md:flex md:justify-between md:items-center my-[20px] hidden" >
+  <div class="md:flex md:justify-between md:items-center my-[25px] hidden" >
     <x-layouts.container>
     <ul class="md:flex flex-row gap-[40px] hidden">
     <li><a class="hover:text-gray-600" href="{{ route('index') }}">Anasayfa</a></li> 
     <li class="has-children inline-block">
         <a class="hover:text-gray-600 before:absolute before:content-['\e313'] before:text-[16px] before:top-2/4 before:right-0 before:translate-y-2/4" href="#">Kategori</a>
         <ul class="dropdown">
-            @if (!empty($categories) && $categories->count() > 0)
+            <!-- @if (!empty($categories) && $categories->count() > 0)
                 @foreach ($categories as $category)
                     @if ($category->cat_ust == null)
                         <li class="has-children">
@@ -55,7 +55,7 @@
                         </li>
                     @endif
                 @endforeach
-            @endif
+            @endif -->
         </ul>
     </li>
     <li><a class="hover:text-gray-600" href="{{ route('about') }}">Hakkımızda</a></li>

@@ -31,20 +31,21 @@
                         <input type="text" class="block w-full py-1.5 px-3 text-[16px] leading-[1.5] text-[#495057] bg-white rounded-[4px] border-[1px] border-solid border-[#ced4da] bg-clip-padding  " id="c_fname" name="name">
                       </div>
                       <div class=" w-1/2">
-                        <label for="c_fname" class="text-black inline-block mb-[8px]">SoyAd<span class="text-danger">*</span></label>
-                        <input type="text" class="block w-full py-1.5 px-3 text-[16px] leading-[1.5] text-[#495057] bg-white rounded-[4px] border-[1px] border-solid border-[#ced4da] bg-clip-padding  " id="c_fname" name="name">
+                        <label for="c_lname" class="text-black inline-block mb-[8px]">Soyad<span class="text-danger">*</span></label>
+                        <input type="text" class="block w-full py-1.5 px-3 text-[16px] leading-[1.5] text-[#495057] bg-white rounded-[4px] border-[1px] border-solid border-[#ced4da] bg-clip-padding  " id="c_lname" name="last_name">
                       </div>
                     </div>
                     <div class="mb-[16px] flex justify-center items-center px-[5px] gap-[15px]">
                       <div class="w-1/2">
                         <label for="c_email" class="text-black inline-block mb-[8px]">E-mail<span class="text-danger">*</span></label>
-                        <input type="email" class="block w-full py-1.5 px-3 text-[16px] leading-[1.5] text-[#495057] bg-white rounded-[4px] border-[1px] border-solid border-[#ced4da] bg-clip-padding  " id="c_email" name="name">
+                        <input type="email" class="block w-full py-1.5 px-3 text-[16px] leading-[1.5] text-[#495057] bg-white rounded-[4px] border-[1px] border-solid border-[#ced4da] bg-clip-padding  " id="c_email" name="email">
                       </div>
                       <div class="w-1/2">
-                        <label for="c_phone" class="text-black inline-block mb-[8px]">E-mail<span class="text-danger">*</span></label>
-                        <input type="email" class="block w-full py-1.5 px-3 text-[16px] leading-[1.5] text-[#495057] bg-white rounded-[4px] border-[1px] border-solid border-[#ced4da] bg-clip-padding  " id="c_email" name="name">
+                        <label for="c_phone" class="text-black inline-block mb-[8px]">Telefon<span class="text-danger">*</span></label>
+                        <input type="text" class="block w-full py-1.5 px-3 text-[16px] leading-[1.5] text-[#495057] bg-white rounded-[4px] border-[1px] border-solid border-[#ced4da] bg-clip-padding  " id="c_phone" name="phone">
                       </div>
                     </div>
+                    
                   
                     <div class="mb-[16px] flex justify-center items-center px-[5px]">
                       <div class="w-full" >
