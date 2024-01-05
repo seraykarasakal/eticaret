@@ -25,7 +25,7 @@
           <div class="flex max-lg:flex-wrap gap-2 pt-[10px] ">
             <div class="flex flex-col max-md:p-[30px] text-center gap-2 p-3">
               <div class="flex justify-center items-center text-center p-[5px]  " >      
-                <img src="images/person_1.jpg" alt="Image placeholder" class=" rounded-[75%]  w-[100px]" >
+                <img src="images/women-face.jpeg" alt="Image placeholder" class=" rounded-[75%]  w-[100px]" >
               </div>
               <div>
                 <h3 class="text-black font-[300] ">Aslı Çelik</h3>
@@ -37,7 +37,7 @@
             </div>
             <div class="flex flex-col max-md:p-[30px] text-center gap-2 p-3">
               <div class="flex justify-center items-center text-center p-[5px]  " >      
-                <img src="images/person_1.jpg" alt="Image placeholder" class=" rounded-[75%]  w-[100px]" >
+                <img src="images/man-face2.jpeg" alt="Image placeholder" class=" rounded-[75%]  w-[100px]" >
               </div>
               <div>
                 <h3 class="text-black font-[300] ">Mert Yılmaz</h3>
@@ -49,7 +49,7 @@
             </div>
             <div class="flex flex-col max-md:p-[30px] text-center gap-2 p-3">
               <div class="flex justify-center items-center text-center p-[5px]  " >      
-                <img src="images/person_1.jpg" alt="Image placeholder" class=" rounded-[75%]  w-[100px]" >
+                <img src="images/women-face2.jpeg" alt="Image placeholder" class=" rounded-[75%]  w-[100px]" >
               </div>
               <div>
                 <h3 class="text-black font-[300] ">Ayşe Kaya</h3>
@@ -61,7 +61,7 @@
             </div>
             <div class="flex flex-col max-md:p-[30px] text-center gap-2 p-3">
               <div class="flex justify-center items-center text-center p-[5px]  " >      
-                <img src="images/person_1.jpg" alt="Image placeholder" class=" rounded-[75%]  w-[100px]" >
+                <img src="images/man-face3.jpeg" alt="Image placeholder" class=" rounded-[75%]  w-[100px]" >
               </div>
               <div>
                 <h3 class="text-black font-[300] ">Emre Atalay</h3>

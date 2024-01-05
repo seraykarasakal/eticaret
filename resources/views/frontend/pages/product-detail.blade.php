@@ -2,25 +2,30 @@
 
 @section('content')
 
-<div class="bg-light py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Tank Top T-Shirt</strong></div>
+<x-layouts.page-nav-bar pageName='{{$product->name}}' />
+
+<x-layouts.container>
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 ">
+      <div>
+        Deneme
+      </div>
+      <div>
+        Deneme
       </div>
     </div>
-  </div>  
+</x-layouts.container>
 
   <div class="site-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="images/cloth_1.jpg" alt="Image" class="img-fluid">
+    <x-layouts.container>
+      <div class="flex flex-row max-[990px]:flex-wrap mx-[-15px] items-center  py-[40px]">
+        <div class="relative w-full mb-12	min-h-[1px] px-[15px] min-w-[992px]:basis-[58.3333%] min-w-[992px]:max-w-[58.3333%] min-w-[768px]:max-w-full min-w-[768px]:basis-full justify-center ">
+          <img src="images/women_jacket.jpeg" alt="Image" class="img-fluid">
         </div>
-        <div class="col-md-6">
-          <h2 class="text-black">{{$product->name ?? ''}}</h2>
-          {!! $product->content ?? ''!!}
-          <p><strong class="text-primary h4">{{number_format($product->price,2)}}</strong></p>
-          <div class="mb-1 d-flex">
+        <div class="text-center	relative w-full min-h-[1px] px-[15px]">
+          <h2 class="text-[32px] mb-[12px] font-medium	text-black leading-line-1 mt-0 text-center	max-sm:text-[20px]">{{$product->name ?? ''}}</h2>
+          <h2 class="text-[16px] font-light	mb-6">{!! $product->content ?? ''!!}</h2> 
+          <p><strong class="text-[16px] font-medium leading-7 text-purple mb-6">{{number_format($product->price,2)}}</strong></p>
+          <!-- <div class="mb-1 d-flex">
             <label for="option-sm" class="d-flex mr-3 mb-3">
               <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-sm" name="shop-sizes"></span> <span class="d-inline-block text-black">Small</span>
             </label>
@@ -33,9 +38,9 @@
             <label for="option-xl" class="d-flex mr-3 mb-3">
               <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-xl" name="shop-sizes"></span> <span class="d-inline-block text-black"> Extra Large</span>
             </label>
-          </div>
-          <div class="mb-5">
-            <div class="input-group mb-3" style="max-width: 120px;">
+          </div> -->
+          <div class="flex max-md:flex-wrap">
+            <div class="md:w-full  md:flex md:justify-center md:items-center " style="max-width: 120px;">
             <div class="input-group-prepend">
               <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
             </div>
@@ -50,82 +55,29 @@
 
         </div>
       </div>
-    </div>
+    </x-layouts.container>
   </div>
 
-  <div class="site-section block-3 site-blocks-2 bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-7 site-section-heading text-center pt-4">
-          <h2>Featured Products</h2>
-        </div>
+  <div class="site-section block-3 site-blocks-2 bg-bg-2 ">  
+  <x-layouts.container>
+    <div class="flex flex-wrap justify-center mx-[-15px]">
+      <div class="md:w-7/12 text-3xl text-black-1	relative before:content-[''] before:left-50 before:top-0 before:absolute before:w-10	before:h-0.5	before:bg-purple  before:translate-x-[-50%] md:mx-auto text-center pt-4">
+        <h2 class="text-[28px] mb-[8px] font-medium leading-line-1 mt-0 text-inherit text-center">Yeni Sezon</h2>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="nonloop-block-3 owl-carousel">
-            <div class="item">
-              <div class="block-4 text-center">
-                <figure class="block-4-image">
-                  <img src="images/cloth_1.jpg" alt="Image placeholder" class="img-fluid">
-                </figure>
-                <div class="block-4-text p-4">
-                  <h3><a href="#">Tank Top</a></h3>
-                  <p class="mb-0">Finding perfect t-shirt</p>
-                  <p class="text-primary font-weight-bold">$50</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="block-4 text-center">
-                <figure class="block-4-image">
-                  <img src="images/shoe_1.jpg" alt="Image placeholder" class="img-fluid">
-                </figure>
-                <div class="block-4-text p-4">
-                  <h3><a href="#">Corater</a></h3>
-                  <p class="mb-0">Finding perfect products</p>
-                  <p class="text-primary font-weight-bold">$50</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="block-4 text-center">
-                <figure class="block-4-image">
-                  <img src="images/cloth_2.jpg" alt="Image placeholder" class="img-fluid">
-                </figure>
-                <div class="block-4-text p-4">
-                  <h3><a href="#">Polo Shirt</a></h3>
-                  <p class="mb-0">Finding perfect products</p>
-                  <p class="text-primary font-weight-bold">$50</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="block-4 text-center">
-                <figure class="block-4-image">
-                  <img src="images/cloth_3.jpg" alt="Image placeholder" class="img-fluid">
-                </figure>
-                <div class="block-4-text p-4">
-                  <h3><a href="#">T-Shirt Mockup</a></h3>
-                  <p class="mb-0">Finding perfect products</p>
-                  <p class="text-primary font-weight-bold">$50</p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="block-4 text-center">
-                <figure class="block-4-image">
-                  <img src="images/shoe_1.jpg" alt="Image placeholder" class="img-fluid">
-                </figure>
-                <div class="block-4-text p-4">
-                  <h3><a href="#">Corater</a></h3>
-                  <p class="mb-0">Finding perfect products</p>
-                  <p class="text-primary font-weight-bold">$50</p>
-                </div>
-              </div>
-            </div>
-          </div>
+    </div>
+    <div class="flex flex-wrap mx-[-15px]">
+      <div class="w-full md:max-w-full relative min-h-[1px] px-[15px] ">
+        <div class="nonloop-block-3 owl-carousel">
+          <x-layouts.slider-card title="Sweatshirt" content="Finding perfect sweatshirt" image="images/men_sweatshirt.jpeg" price="250₺"/>  
+          <x-layouts.slider-card title="T-Shirt" content="Finding perfect t-shirt" image="images/women_jacket.jpeg" price="200₺"/>  
+          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/bag.jpeg" price="1200₺"/>         
+          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/bag2.jpeg" price="1200₺"/>         
+          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/unisex_sweatshirt.jpeg" price="1200₺"/>         
+          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/unisex_sweatshirt2.jpeg" price="1200₺"/>         
+
         </div>
       </div>
     </div>
-  </div>
+  </x-layouts.container>
+</div>
 @endsection

@@ -1,8 +1,8 @@
 @extends('frontend.layouts.layout')
 @section('content')
 
-<div class=" h-2/3 w-full max-md:h-2/5">
-  <div class=" h-full flex w-full bg-[#c8d0c1] font-poppins my-[20px] ">
+<div class=" h-2/3 w-full max-md:h-2/5 max-sm:">
+  <div class=" h-full flex w-full bg-[#cdc5b7] font-poppins my-[20px] ">
     <div class = "relative flex text-center w-1/3 ">
       <img class="" src="{{ asset('images/women.jpg')}}" alt="">
     </div>
@@ -59,7 +59,7 @@
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0" >
         <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{route('women-products')}} ">
           <figure class="image relative mb-0 overflow-hidden">
-            <img src="images/women.jpg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0 ">
+            <img src="images/women2.jpeg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0 ">
           </figure>
           <div class="text z-[2] w-full bottom-0	pl-[20px] absolute	text-white">
             <span class="uppercase text-[12px] tracking-[.1em] font-black">Collections</span>
@@ -71,7 +71,7 @@
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0 ">
         <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{route('child-products')}}">
           <figure class="image relative mb-0 overflow-hidden">
-            <img src="images/children.jpg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0">
+            <img src="images/children2.jpeg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0">
           </figure>
           <div class="text z-[2] w-full bottom-0	pl-[20px] absolute	text-white">
             <span class="uppercase text-[12px] tracking-[.1em] font-black">Collections</span>
@@ -79,14 +79,14 @@
           </div>
         </a>
       </div>
-      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0">
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0 ">
         <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{route('men-products')}}">
-          <figure class="image relative mb-0 overflow-hidden">
-            <img src="images/men.jpg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0">
+          <figure class="image relative mb-0 overflow-hidden ">
+            <img src="images/men2.jpg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0">
           </figure>
           <div class="text z-[2] w-full bottom-0	pl-[20px] absolute	text-white">
             <span class="uppercase text-[12px] tracking-[.1em] font-black">Collections</span>
-            <h3 class="text-[40px] leading-line-1 font-medium mb-[8px]	">Erkek</h3>
+            <h3 class="text-[40px] leading-line-1 font-medium mb-[8px]	">Erkekk</h3>
           </div>
         </a>
       </div>
@@ -104,9 +104,13 @@
     <div class="flex flex-wrap mx-[-15px]">
       <div class="w-full md:max-w-full relative min-h-[1px] px-[15px] ">
         <div class="nonloop-block-3 owl-carousel">
-          <x-layouts.slider-card title="Sweatshirt" content="Finding perfect sweatshirt" image="images/cloth_1.jpg" price="250₺"/>  
-          <x-layouts.slider-card title="T-Shirt" content="Finding perfect t-shirt" image="images/cloth_1.jpg" price="200₺"/>  
-          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/cloth_1.jpg" price="1200₺"/>         
+          <x-layouts.slider-card title="Sweatshirt" content="Finding perfect sweatshirt" image="images/men_sweatshirt.jpeg" price="250₺"/>  
+          <x-layouts.slider-card title="T-Shirt" content="Finding perfect t-shirt" image="images/women_jacket.jpeg" price="200₺"/>  
+          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/bag.jpeg" price="1200₺"/>         
+          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/bag2.jpeg" price="1200₺"/>         
+          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/unisex_sweatshirt.jpeg" price="1200₺"/>         
+          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/unisex_sweatshirt2.jpeg" price="1200₺"/>         
+
         </div>
       </div>
     </div>
@@ -125,11 +129,11 @@
         <a href="#" class="text-purple no-underline	bg-transparent "><img src="images/blog_1.jpg" alt="Image placeholder" class="img-fluid rounded max-w-full h-auto align-middle border-none"></a>
       </div>
       <div class="text-center	relative w-full min-h-[1px] px-[15px]">
-        <h2 class="text-[32px] mb-[12px] font-medium	leading-line-1 mt-0 text-center	"><a class="text-purple no-underline bg-transparent" href="#">Seçili ürünlerde %50 indirim</a></h2>
-        <p class="mb-[12px] text-grey-1">Alışverişe başlayın ve indirimi yakalayın</p>
-        <p><a href="{{ route('discount-products') }}" class=" inline-block uppercase relative duration-[0.2s] ease-in-out delay-0	transition-all bg-purple hover:bg-violet	 text-white font-bold py-[10px] px-[20px] tracking-[.2em] text-[14px] mb-[12px] rounded">Shop Now</a></p>
+        <h2 class="text-[32px] mb-[12px] font-medium	leading-line-1 mt-0 text-center	max-sm:text-[20px]"><a class="text-purple no-underline bg-transparent" href="#">Seçili ürünlerde %50 indirim</a></h2>
+        <p class="mb-[12px] text-grey-1 max-sm:text-[12px]">Alışverişe başlayın ve indirimi yakalayın</p>
+        <p><a href="{{ route('discount-products') }}" class=" inline-block uppercase relative duration-[0.2s] ease-in-out delay-0	transition-all bg-purple hover:bg-violet	 text-white font-bold py-[10px] px-[20px] tracking-[.2em] text-[14px] mb-[12px] rounded max-sm:py-[5px] max-sm:px-[10px] max-sm:text-[10px]">Shop Now</a></p>
       </div>
     </div>
   </x-layouts.container>
-</div>Z
+</div>
 @endsection

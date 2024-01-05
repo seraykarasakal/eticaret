@@ -10,22 +10,7 @@ class PageController extends Controller
 {
     public function products(Request $request)
     {
-        $sizes = !empty($request->size) ? explode(',',$request->size) : null;
-
-        $colors = !empty($request->color) ? explode(',',$request->color) : null;
-
-        $products = Product::where('status','1')
-        ->where(function($q) use($sizes,$colors) {
-           if(!empty($sizes)) {
-                $q->whereIn('size', $sizes);
-            }
-            if(!empty($colors)) {
-                $q->whereIn('color', $colors);
-            }
-
-            return $q;
-        })
-        ->paginate(1);
+        $products = Product::get();
         return view('frontend.pages.products',compact('products'));
     }
 
