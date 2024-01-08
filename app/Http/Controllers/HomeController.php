@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index(){
         $slider = Slider::where('status','1')->first();
-        $categories = Category::where('status','1')->get();
+        $categories = Category::get();
         return view('frontend.pages.index',compact('slider', 'categories'));
     }
 }

@@ -8,28 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    use Sluggable;
     protected $fillable = [
         'name',
-        'slug',
         'image',
         'category_id',
-        'short_text',
         'price',
         'size',
         'color',
-        'qty',
-        'kdv',
-        'status',
-        'content',
+        'description',
+        'gender',
         
     ];
-    public function sluggable(): array
-    {
-        return [
-            'slug' => [
-                'source' => 'name'
-            ]
-        ];
+
+    public function category(){
+        return $this->belongsTo('App\Models\Category');
     }
 }

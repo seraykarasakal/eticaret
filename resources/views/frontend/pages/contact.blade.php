@@ -23,7 +23,7 @@
                 @endif
                 <form action="{{route('contact_save')}}" method="post">
                   @csrf
-                  <div class="p-[16px] border-[1px] border-solid border-[#e5e7eb] ">
+                  <div class="p-[16px] border-[1px] border-solid border-[#999999] ">
 
                     <div class="mb-[16px] flex justify-center items-center px-[5px] gap-[15px]">
                       <div class=" w-1/2">

@@ -10,6 +10,7 @@ export default {
     theme: {
         extend: {
             colors: {
+                white: "#ffffff",
                 purple: "#7971ea",
                 grey: "#25262a",
                 "grey-1": "#8c92a0",

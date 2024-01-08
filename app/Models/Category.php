@@ -9,23 +9,19 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use HasFactory;
-    use Sluggable;
+
     protected $fillable = [
       'image',
-      'thumbnail',
       'name',
-      'slug',
-      'content',
-      'cat_ust',
-      'status',
     ];
 
-    public function sluggable(): array
+
+    public function products(){
+        return $this->hasMany('App\Models\Product');
+    }
+
+    public function categoryProductCount()
     {
-        return [
-            'slug' => [
-                'source' => 'name'
-            ]
-        ];
+        return $this->products()->count();
     }
 }

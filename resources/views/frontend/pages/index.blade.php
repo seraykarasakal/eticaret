@@ -57,7 +57,7 @@
   <x-layouts.container>
     <div class="flex gap-4 flex-col sm:flex-row">
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0" >
-        <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{route('women-products')}} ">
+        <a class="h-full block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{route('products',['gender'=>2])}} ">
           <figure class="image relative mb-0 overflow-hidden">
             <img src="images/women2.jpeg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0 ">
           </figure>
@@ -69,7 +69,7 @@
       
       </div>
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0 ">
-        <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{route('child-products')}}">
+        <a class="h-full block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{route('products', ['gender'=>3])}}">
           <figure class="image relative mb-0 overflow-hidden">
             <img src="images/children2.jpeg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0">
           </figure>
@@ -80,13 +80,13 @@
         </a>
       </div>
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 lg:mb-0 ">
-        <a class="block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{route('men-products')}}">
+        <a class="h-full block relative group before:z-[1] before:content-[''] before:inset-0 before:absolute before:bg-bg-1" href="{{route('products', ['gender'=>1])}}">
           <figure class="image relative mb-0 overflow-hidden ">
             <img src="images/men2.jpg" alt="" class=" align-middle	transition duration-500 trasform img-fluid group-hover:scale-110 mb-0">
           </figure>
           <div class="text z-[2] w-full bottom-0	pl-[20px] absolute	text-white">
             <span class="uppercase text-[12px] tracking-[.1em] font-black">Collections</span>
-            <h3 class="text-[40px] leading-line-1 font-medium mb-[8px]	">Erkekk</h3>
+            <h3 class="text-[40px] leading-line-1 font-medium mb-[8px]	">Erkek</h3>
           </div>
         </a>
       </div>
@@ -125,7 +125,7 @@
       </div>
     </div>
     <div class="flex flex-row max-[990px]:flex-wrap mx-[-15px] items-center  py-[40px]">
-      <div class="relative w-full mb-12	min-h-[1px] px-[15px] min-w-[992px]:basis-[58.3333%] min-w-[992px]:max-w-[58.3333%] min-w-[768px]:max-w-full min-w-[768px]:basis-full ">
+      <div class="relative w-full 	min-h-[1px] px-[15px] min-w-[992px]:basis-[58.3333%] min-w-[992px]:max-w-[58.3333%] min-w-[768px]:max-w-full min-w-[768px]:basis-full ">
         <a href="#" class="text-purple no-underline	bg-transparent "><img src="images/blog_1.jpg" alt="Image placeholder" class="img-fluid rounded max-w-full h-auto align-middle border-none"></a>
       </div>
       <div class="text-center	relative w-full min-h-[1px] px-[15px]">

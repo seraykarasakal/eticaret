@@ -17,8 +17,6 @@
         </li>
         <li class="block relative float-left w-full "><a class=" px-[20px] py-[10px] text-[20px] block relative  @if(Route::is('about') ) text-purple @else  text-grey-2 @endif" href="{{ route('about') }}">Hakkımızda</a></li>
         <li class="block relative float-left w-full "><a class="px-[20px] py-[10px] text-[20px] block relative  @if(Route::is('products') ) text-purple @else  text-grey-2 @endif" href="{{ route('products')}}">Shop</a></li>
-        <li class="block relative float-left w-full "><a class="px-[20px] py-[10px] text-[20px] block relative  @if(Route::is('index') ) text-purple @else  text-grey-2 @endif" href="#">Catalogue</a></li>
-        <li class="block relative float-left w-full "><a class="px-[20px] py-[10px] text-[20px] block relative  @if(Route::is('index') ) text-purple @else  text-grey-2 @endif" href="#">New Arrivals</a></li>
         <li class="block relative float-left w-full "><a class="px-[20px] py-[10px] text-[20px] block relative  @if(Route::is('contact') ) text-purple @else  text-grey-2 @endif " href="{{ route('contact') }}">İletişim</a></li>
       </ul>
     </div>

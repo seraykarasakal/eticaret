@@ -37,31 +37,8 @@
     <x-layouts.container>
     <ul class="md:flex flex-row gap-[40px] hidden">
     <li><a class="hover:text-gray-600" href="{{ route('index') }}">Anasayfa</a></li> 
-    <li class="has-children inline-block">
-        <a class="hover:text-gray-600 before:absolute before:content-['\e313'] before:text-[16px] before:top-2/4 before:right-0 before:translate-y-2/4" href="#">Kategori</a>
-        <ul class="dropdown">
-            <!-- @if (!empty($categories) && $categories->count() > 0)
-                @foreach ($categories as $category)
-                    @if ($category->cat_ust == null)
-                        <li class="has-children">
-                            <a href="#">{{$category->name}}</a>
-                            <ul class="dropdown">
-                                @foreach ($categories as $subCategory)
-                                    @if ($subCategory->cat_ust == $category->id)
-                                        <li><a href="#">{{ $subCategory->name }}</a></li>
-                                    @endif
-                                @endforeach
-                            </ul>
-                        </li>
-                    @endif
-                @endforeach
-            @endif -->
-        </ul>
-    </li>
     <li><a class="hover:text-gray-600" href="{{ route('about') }}">Hakkımızda</a></li>
     <li><a class="hover:text-gray-600" href="{{ route('products') }}">Shop</a></li>
-    <li><a class="hover:text-gray-600" href="#">Catalogue</a></li>
-    <li><a class="hover:text-gray-600" href="#">New Arrivals</a></li>
     <li><a class="hover:text-gray-600" href="{{ route('contact') }}">İletişim</a></li>
 </ul>
 

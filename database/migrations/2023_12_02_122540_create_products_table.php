@@ -14,17 +14,18 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable(); 
-            $table->string('slug')->nullable(); 
             $table->string('image')->nullable(); 
             $table->unsignedBigInteger('category_id')->nullable();
-            $table->text('short_text')->nullable();
             $table->double('price',8,2)->nullable();
-            $table->string('size')->nullable();
+            $table->integer('gender')->nullable();
+            $table->integer('size')->nullable();
             $table->string('color')->nullable();
-            $table->integer('qty')->nullable();
-            $table->enum('status',['0','1'])->default('0');
-            $table->longText('content')->nullable();
+            $table->longText('description')->nullable();
             $table->timestamps();
+            $table->foreign('category_id')
+                    ->references('id')
+                    ->on('categories')
+                    ->onCascade('delete');
         });
     }
 
