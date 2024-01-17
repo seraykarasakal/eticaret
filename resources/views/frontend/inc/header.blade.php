@@ -10,7 +10,7 @@
         </div>
         <div class="flex justify-center order-1 md:order-2 items-center w-full md:w-1/3 mb-3 md:mb-0 text-center px-[15px]">
           <div class="site-logo">
-          <a class="inline-block uppercase px-[10px] tracking-[.2em] border-solid	border-[2px] border-grey " href="{{ route('index') }}">Shoppers</a></li>
+          <a class="inline-block uppercase px-[10px] tracking-[.2em] border-solid	border-[2px] border-grey " href="{{ route('index') }}">ShopVibe</a></li>
           </div>
         </div>
         <div class="w-full md:w-1/3 max-md:w-[50%] order-3  md:order-3 flex justify-end text-right px-[15px]">
@@ -38,7 +38,7 @@
     <ul class="md:flex flex-row gap-[40px] hidden">
     <li><a class="hover:text-gray-600" href="{{ route('index') }}">Anasayfa</a></li> 
     <li><a class="hover:text-gray-600" href="{{ route('about') }}">Hakkımızda</a></li>
-    <li><a class="hover:text-gray-600" href="{{ route('products') }}">Shop</a></li>
+    <li><a class="hover:text-gray-600" href="{{ route('products') }}">Alışveriş</a></li>
     <li><a class="hover:text-gray-600" href="{{ route('contact') }}">İletişim</a></li>
 </ul>
 

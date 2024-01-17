@@ -60,9 +60,9 @@
                         <textarea name="message" id="c_message" cols="30" rows="7" class="block w-full py-1.5 px-3 text-[16px] leading-[1.5]   text-[#495057] bg-white rounded-[4px] border-[1px] border-solid border-[#ced4da] bg-clip-padding "></textarea>
                       </div>
                     </div>
-                    <div class="mb-[16px] flex justify-end items-end px-[5px]">
-                      <div class=" w-1/4 ">
-                        <button type="submit" class="uppercase relative transition-all text-[17px] font-light	tracking-[.1em] text-white bg-[#535353] btn-lg block w-full rounded-[4px] p-[5px]" value="Send Message">Gönder</button>
+                    <div class="mb-[16px] flex justify-end items-end px-[5px] ">
+                      <div class=" w-1/4">
+                        <button type="submit" class="flex justify-center uppercase relative transition-all text-[17px] font-light	tracking-[.1em] text-white bg-[#535353] btn-lg w-full rounded-[4px] p-[5px]" value="Send Message">Gönder</button>
                       </div>
                     </div>
                   </div>

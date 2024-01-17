@@ -10,7 +10,7 @@
             </div>
             <div class="md:w-[50%] max-md:w-full max-md:flex-col md:flex md:flex-col p-[20px]  ">
               <h2 class="text-[30px] font-normal font-poppins max-md:text-[26px]  text-black mb-[15px] " >Biz Kimiz?</h2>
-              <p class="text-[18px] max-md:text-[16px] font-normal font-poppins text-[#544e4e] leading-[1.7em]" >Müşterilerimize benzersiz bir alışveriş deneyimi sunmayı amaçlayan bir e-ticaret platformuyuz. [Sitenizin Adı]'nin temeli, kaliteli ürünleri uygun fiyatlarla sunma, müşteri memnuniyetini en üst düzeye çıkarma ve sürdürülebilir bir alışveriş ortamı yaratma misyonuna dayanmaktadır.Her birimiz, kendi alanlarında uzman, yaratıcı ve çözüm odaklı bireyleriz. </p>
+              <p class="text-[18px] max-md:text-[16px] font-normal font-poppins text-[#544e4e] leading-[1.7em]" >Müşterilerimize benzersiz bir alışveriş deneyimi sunmayı amaçlayan bir e-ticaret platformuyuz. ShopVibe'ın temeli, kaliteli ürünleri uygun fiyatlarla sunma, müşteri memnuniyetini en üst düzeye çıkarma ve sürdürülebilir bir alışveriş ortamı yaratma misyonuna dayanmaktadır.Her birimiz, kendi alanlarında uzman, yaratıcı ve çözüm odaklı bireyleriz. </p>
             <p class="text-[18px] max-md:text-[16px] font-normal font-poppins text-[#544e4e] leading-[1.7em]" >Müşterilerimizle bağlantı kurma ve onlara unutulmaz bir alışveriş deneyimi sunma konusundaki kararlılığımız, bizi diğerlerinden ayıran temel unsurlardan biridir.</p>
             </div>
           </div>

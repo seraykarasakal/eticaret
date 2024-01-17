@@ -36,21 +36,21 @@
     @endif
    
     <select class="form-select mb-3" aria-label="Default select example" id="gender" name="gender">
-        <option selected>Cinsiyet</option>
+        <option selected disabled>Cinsiyet</option>
         @foreach(\App\Models\Gender::GENDERS as $key => $gender)
             <option value="{{$key}}">{{$gender}}</option>
         @endforeach
     </select>
 
     <select class="form-select mb-3" aria-label="Default select example" id="color" name="color">
-        <option selected>Renk</option>
+        <option selected disabled>Renk</option>
         @foreach(\App\Models\Color::COLORS as $key => $color)
             <option value="{{$key}}">{{$color}}</option>
         @endforeach
     </select>
 
     <select class="form-select mb-3" aria-label="Default select example" id="size" name="size">
-        <option selected>Beden</option>
+        <option selected disabled>Beden</option>
         @foreach(\App\Models\Size::SIZES as $key => $size)
             <option value="{{$key}}">{{$size}}</option>
         @endforeach

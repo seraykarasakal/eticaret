@@ -2,7 +2,6 @@
 
 @section('content')
 
-  <x-layouts.page-nav-bar pageName='Shop' />
 
   <x-layouts.container>
     <div class="flex flex-col md:flex-row gap-[30px] py-[80px]">
@@ -35,11 +34,11 @@
 
           <div class="flex flex-col gap-[10px] ">
             <div class="flex gap-[10px]">
-              <label class="w-6/12 text-black" for="min-price">Min Price</label>
+              <label class="w-6/12 text-black" for="min-price">Minimum Fiyat</label>
               <input type="number" name="min_price" id="min_price" class=" w-6/12 border-[1px] border-grey-6 border-solid rounded">
             </div>
             <div class="flex gap-[10px]">
-              <label class="w-6/12 text-black" for="max-price">Max Price</label>
+              <label class="w-6/12 text-black" for="max-price">Maximum Fiyat</label>
               <input type="number" name="max_price" id="max_price" class="w-6/12 border-[1px] border-grey-6 border-solid rounded">
             </div>
           </div>
@@ -71,7 +70,7 @@
       <div class="w-100 md:w-9/12">
         <div class="flex justify-between mb-[48px]">
           <div>
-            <h2 class="text-[20px] text-black">Shop All</h2>
+            <h2 class="text-[20px] text-black">Ürünler</h2>
           </div>
         </div>
 

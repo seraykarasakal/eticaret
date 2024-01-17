@@ -3,14 +3,14 @@
 
 <div class=" h-2/3 w-full max-md:h-2/5 max-sm:">
   <div class=" h-full flex w-full bg-[#cdc5b7] font-poppins my-[20px] ">
-    <div class = "relative flex text-center w-1/3 ">
+    <div class = "relative flex text-center w-1/3 max-sm:hidden">
       <img class="" src="{{ asset('images/women.jpg')}}" alt="">
     </div>
-    <div class = "flex flex-col text-center justify-center items-center p-[20px] w-1/3 gap-6">
+    <div class = "flex flex-col text-center justify-center items-center p-[20px] w-1/3 gap-6 max-sm:text-center max-sm:w-full">
       <h2 class="font-medium leading-[1.5rem] md:text-[26px] text-white  uppercase font-ebgaramond ">Modayı Keşfedin</h2>
       <p class="font-medium md:leading-[1.6rem] md:text-[20px] text-white font-poppins max-md:leading-[1.5rem]">Yeni sezonun en trend giyim ürünleri burada! Stilinizi keşfedin ve tarzınızı yaratın. Sadece bir tık uzaklığınızda unutulmaz bir alışveriş deneyimi sizi bekliyor</p>
     </div>
-    <div class = " relative flex justify-end w-1/3" >
+    <div class = " relative flex justify-end w-1/3 max-sm:hidden" >
       <img class="" src="{{ asset('images/children.jpg') }}" alt="">
     </div>
   </div> 
@@ -104,19 +104,14 @@
     <div class="flex flex-wrap mx-[-15px]">
       <div class="w-full md:max-w-full relative min-h-[1px] px-[15px] ">
         <div class="nonloop-block-3 owl-carousel">
-          <x-layouts.slider-card title="Sweatshirt" content="Finding perfect sweatshirt" image="images/men_sweatshirt.jpeg" price="250₺"/>  
-          <x-layouts.slider-card title="T-Shirt" content="Finding perfect t-shirt" image="images/women_jacket.jpeg" price="200₺"/>  
-          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/bag.jpeg" price="1200₺"/>         
-          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/bag2.jpeg" price="1200₺"/>         
-          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/unisex_sweatshirt.jpeg" price="1200₺"/>         
-          <x-layouts.slider-card title="Shoes" content="Finding perfect shoes" image="images/unisex_sweatshirt2.jpeg" price="1200₺"/>         
-
+          @foreach($products as $product)
+          <x-layouts.slider-card title="{{$product->name}}" content="{{$product->description}} " image="{{ $product->image }}" price="{{ $product->price }}"/>  
+          @endforeach
         </div>
       </div>
     </div>
   </x-layouts.container>
 </div>
-
 <div class="site-section block-8">
   <x-layouts.container>
     <div class="flex flex-wrap justify-center mx-[-15px]">

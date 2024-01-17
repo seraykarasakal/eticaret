@@ -4,7 +4,7 @@
   <div class="w-[300px] fixed right-0 z-[3] pt-[20px] bg-white h-full duration-[0.2s] ease-in-out delay-0	transition-all transform translate-x-0 max-w-3xl:hidden top-0  ">
     <div class="w-full float-left my-[20px] px-[20px]">
       <div class="float-left ">
-        <a class="inline-block uppercase text-grey text-[20px] px-[10px] tracking-[.2em] border-solid	border-[2px] border-grey " href="{{ route('index') }}">Shoppers</a></li>
+        <a class="inline-block uppercase text-grey text-[20px] px-[10px] tracking-[.2em] border-solid	border-[2px] border-grey " href="{{ route('index') }}">ShopVibe</a></li>
       </div>
       <div class="float-right ">
         <i id="close" class="las la-times text-[30px] text-grey inline-block px-[10px] cursor-pointer	duration-[0.2s] ease-in-out delay-0	transition-all "></i>

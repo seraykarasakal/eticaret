@@ -10,7 +10,7 @@
               <ul class="list-unstyled">
                 <li><a href="{{route('index')}}">Anasayfa</a></li>
                 <li><a href="{{ route('about') }}">Hakkımızda</a></li>
-                <li><a href="{{ route('products')}}">Shop</a></li>
+                <li><a href="{{ route('products')}}">Alışveriş</a></li>
                 <li><a href="{{ route('contact') }}">İletişim</a></li>
               </ul>
             </div>

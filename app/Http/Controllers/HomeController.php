@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Product;
 
 use App\Models\Slider;
 use App\Models\Category;
@@ -11,7 +12,7 @@ class HomeController extends Controller
     public function index(){
         $slider = Slider::where('status','1')->first();
         $categories = Category::get();
-        return view('frontend.pages.index',compact('slider', 'categories'));
+        $products = Product::all();
+        return view('frontend.pages.index',compact('slider', 'categories', 'products'));
     }
 }
-
